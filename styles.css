@@ -10,7 +10,10 @@ body {
   margin: 50px auto;
   text-align: center;
 }
-
+.cell.winner {
+  background-color: purple;
+	  color: black;
+}
 h1 {
   font-size: 40px;
   margin-bottom: 30px;

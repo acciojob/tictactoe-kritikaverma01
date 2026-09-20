@@ -116,9 +116,7 @@ for (let i = 1; i <= 9; i++) {
 
 // Check winner
 function checkWinner() {
-
   for (let pattern of winningPatterns) {
-
     const a = pattern[0];
     const b = pattern[1];
     const c = pattern[2];
@@ -128,6 +126,11 @@ function checkWinner() {
       board[a] === board[b] &&
       board[b] === board[c]
     ) {
+      // Highlight winning cells
+      document.getElementById(a).classList.add("winner");
+      document.getElementById(b).classList.add("winner");
+      document.getElementById(c).classList.add("winner");
+
       return true;
     }
   }
